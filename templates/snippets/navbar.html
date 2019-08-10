@@ -1,0 +1,51 @@
+{% load static %}
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire"></span> Logo</a>
+        </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/">Beranda</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="about-us">
+                        <li><a href="/profil/profil">Visi-Misi</a></li>
+                        <li><a href="/profil/profil">Prestasi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akademik <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="about-us">
+                        <li><a href="/akademik/siswa">Siswa</a></li>
+                        <li><a href="/akademik/pendidik">Guru</a></li>
+                        <li><a href="/akademik/kalender">Kalender Akademik</a></li>
+                        <li><a href="/akademik/eskul">Ekstrakurikuler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/kontak/kontak">Kontak</a>
+                </li>
+                <li class="dropdown">
+                    <a href="/daftar/daftar_siswa" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PENDAFTARAN SISWA BARU <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="about-us">
+                        <li><a href="/daftar/daftar_siswa">Daftar Secara Online</a></li>
+                        <li><a href="#">Daftar Langsung</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

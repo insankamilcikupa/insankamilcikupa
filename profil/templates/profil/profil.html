@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TK INSAN KAMIL</title>
+
+    {% include "snippets/styles.html" %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "profil/css/styles.css" %}">
+
+</head>
+
+<body>
+	{% include "snippets/navbar.html" %}
+</br>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container text-black text-center">
+		  <h1 class="display-4">TK INSAN KAMIL</h1>
+		  <p class="lead">Moto kami adalah selalu dekat Al-Quran sebagai petunjuk</p>
+		</div>
+	  </div>
+
+	<footer>
+        <div class="small-print">
+        	<div class="container text-center">
+        		<p><a href="#">Bantuan &amp; Kontak</a> | <a href="#">Privacy Policy</a> | <a href="#">Lokasi</a></p>
+        		<p>Copyright &copy; InsanKamil 2019 </p>
+        	</div>
+        </div>
+	</footer>
+
+	{% include "snippets/js.html" %}
+   
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TK INSAN KAMIL</title>
+
+    {% include "snippets/styles.html" %}
+    <link href="{% static "css/custom.css" %}" rel="stylesheet">
+</head>
+<body>
+	{% include "snippets/navbar.html" %}
+
+	<div class="container bg-dark shadow mt-5">
+		<h3>
+			<center>DATA SISWA TK INSAN KAMIL TAHUN AJARAN 2018/2019</center>
+		</h3>
+	</div>
+
+	<div class="container bg-light shadow mt-5">
+		<div class="row featurette">
+			<center>
+					<ul class="nav">
+							<li class="nav-link">
+								<a class= "nav-item" href="/akademik/siswa" title="">
+										Semua Siswa
+								</a>
+								<a href="/akademik/kelas/B1" title="">
+										Berdasarkan Kelas
+								</a>
+							</li>
+					</ul>
+				</center>
+				<div class="container bg-light shadow mt-5">
+						<div class="row featurette">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>No</th>
+											<th>NIS</th>
+											<th>Nama</th>
+											<th>Kelas</th>                         
+										</tr>
+									</thead>  
+									<tbody>
+									{% for siswa in Data %}
+										<tr>
+											<td>{{siswa.id}}</td>
+											<td>{{siswa.nis}}</td>
+											<td>{{siswa.nama}}</td>
+											<td>{{siswa.kelas}}</td>				
+										</tr>
+									</tbody>
+									{% endfor %}
+								</table>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+	
+		
+	<footer>
+        <div class="small-print">
+        	<div class="container">
+        		<p><a href="#">Bantuan &amp; Kontak</a> | <a href="#">Privacy Policy</a> | <a href="#">Lokasi</a></p>
+        		<p>Copyright &copy; InsanKamil 2019 </p>
+        	</div>
+        </div>
+	</footer>
+
+	{% include "snippets/js.html" %}
+   
+</body>
+
+</html>

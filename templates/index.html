@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TK INSAN KAMIL</title>
+
+    {% include "snippets/styles.html" %}
+    <link href="{% static "css/custom.css" %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    {% include "snippets/navbar.html" %}
+	<div class="jumbotron feature">
+		<div class="container">
+		
+		<div id="feature-carousel" class="carousel slide" data-ride="carousel" >
+		
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<h1>TK INSAN KAMIL</h1>
+					<p>Terakreditasi A </p>
+					<p>Mencetak Generasi Madani yang Berakhlakul Karimah</p>
+				</div>
+				<div class="item">
+					<h1>ZIPA SEBAGAI TEMAN SISWA</h1>
+					<p>Zikir Pagi Merupakan Aktivitas Rutin Siswa</p>
+					<p><a class="btn btn-primary" href="#">Baca Selengkapnya</a></p>
+				</div>
+				<div class="item">
+					<h1>PENDAFTARAN SISWA BARU</h1>
+					<p>Tahun Ajaran 2018/2019</p>
+					<p><a class="btn btn-primary" href="#">Daftar Sekarang</a></p>
+				</div>			  
+			</div>
+			<a class="left carousel-control" href="#feature-carousel" role="button" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#feature-carousel" role="button" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+
+		</div>
+	</div>
+
+
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Page Intro -->
+        <div class="row page-intro">
+            <div class="col-lg-12">
+				<h2>AKADEMIK</h2>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Feature Row -->
+        <div class="row">
+            <article class="col-md-4 article-intro">
+                <a href="#">
+                    <img class="img-circle" src="{% static "img/siswa.jpg" %}" alt="">
+                </a>
+                <h3>
+                    <a href="#">Siswa </a>
+                </h3>
+            </article>
+            <article class="col-md-4 article-intro">
+                <a href="#">
+                    <img class="img-circle" src="{% static "img/guru.jpg" %}" alt="">
+                </a>
+                <h3>
+                    <a href="#">Guru </a>
+                </h3>
+            </article>
+
+            <article class="col-md-4 article-intro">
+                <a href="#">
+                    <img class="img-circle" src="{% static "img/act.jpg" %}" alt="">
+                </a>
+                <h3>
+                    <a href="#">Kegiatan</a>
+                </h3>
+            </article>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+	
+	<footer>
+		<div class="footer-blurb">
+			<div class="container">
+					<div class="row page-intro">
+							<div class="col-lg-12">
+								<h1>EKSTRAKURIKULER</h1>
+							</div>
+						</div>
+				<div class="row">
+					<div class="col-sm-4 footer-blurb-item">
+						<img class="img-circle" src="{% static "img/menari.jpg" %}" alt="" width="100" height="100">
+						<h3>Menari</h3>
+						<p><a class="btn btn-default" href="#">Lihat Disini</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<img class="img-circle" src="{% static "img/menyanyi.jpg" %}" alt="" width="100" height="100">
+						<h3>Menyanyi</h3>
+						<p><a class="btn btn-default" href="#">Lihat Disini</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<img class="img-circle" src="{% static "img/inggris.jpg" %}" alt="" width="100" height="100">
+						<h3>Bahasa Inggris</h3>
+						<p><a class="btn btn-default" href="#">Lihat Disini</a></p>
+					</div>
+
+				</div>
+				<!-- /.row -->	
+			</div>
+        </div>
+        
+        <div class="small-print">
+        	<div class="container">
+        		<p><a href="#">Bantuan &amp; Kontak</a> | <a href="#">Privacy Policy</a> | <a href="#">Lokasi</a></p>
+        		<p>Copyright &copy; InsanKamil 2019 </p>
+        	</div>
+        </div>
+	</footer>
+
+	{% include "snippets/js.html" %}
+   
+</body>
+
+</html>
